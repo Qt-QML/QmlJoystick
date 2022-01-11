@@ -13,6 +13,6 @@ Window {
         width: 1340 * scaleRatio
         height: 1340 * scaleRatio
         color: window.color
-        scaleRatio: 0.7 * Math.min(window.height / 1080, window.width / 1920)
+        scaleRatio: 0.7 * Math.min(window.height / 1366, window.width / 768)
     }
 }

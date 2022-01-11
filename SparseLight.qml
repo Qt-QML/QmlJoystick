@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtGraphicalEffects 1.0
 
 Item {
     id: root
@@ -42,7 +43,7 @@ Item {
             {
                 context.reset()
                 context.beginPath()
-                context.arc(radius, radius, 0.9 * radius, 0, 2 * Math.PI)
+                context.arc(radius, radius, 0.8 * radius, 0, 2 * Math.PI)
                 context.fillStyle = lightColor
                 context.fill();
             }
@@ -50,6 +51,14 @@ Item {
 
         visible: lightOn
         opacity: lightBrightness
+        layer.enabled: true
+        layer.effect: Glow {
+            anchors.fill: root
+            radius: 2 * root.radius
+            samples: 24
+            color: lightColor
+            source: light
+        }
     }
 }
 
