@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.0
 Canvas {
     property double radius: 230
     property string color: "#34393f"
-    property string lightColor: "#8BFCEE"
+    property string lightColor: "#8bfcee"
 
     id: root
     width: 2 * radius

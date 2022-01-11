@@ -7,7 +7,7 @@ Item {
 
     property double radius: 12
     property string backgroundColor: "#34393f"
-    property string lightColor: "#8BFCEE"
+    property string lightColor: "#8bfcee"
     property bool lightOn: false
     property double lightBrightness: 1.0
 
@@ -23,7 +23,7 @@ Item {
             {
                 context.reset()
                 context.beginPath()
-                context.arc(radius, radius, 0.8 * radius, 0, 2 * Math.PI)
+                context.arc(radius, radius, 0.9 * radius, 0, 2 * Math.PI)
                 context.fillStyle = backgroundColor
                 context.fill();
             }
@@ -42,7 +42,7 @@ Item {
             {
                 context.reset()
                 context.beginPath()
-                context.arc(radius, radius, 0.8 * radius, 0, 2 * Math.PI)
+                context.arc(radius, radius, 0.9 * radius, 0, 2 * Math.PI)
                 context.fillStyle = lightColor
                 context.fill();
             }

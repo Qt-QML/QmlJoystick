@@ -2,13 +2,17 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 
 Window {
+    id: window
     width: 1366
     height: 768
     visible: true
-    color: "#111111"
+    color: "#22262a"
 
     Joystick {
         anchors.centerIn: parent
-        scale: 0.65
+        width: 1340 * scaleRatio
+        height: 1340 * scaleRatio
+        color: window.color
+        scaleRatio: 0.7 * Math.min(window.height / 1080, window.width / 1920)
     }
 }
